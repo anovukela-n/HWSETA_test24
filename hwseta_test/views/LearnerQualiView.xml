@@ -1,0 +1,52 @@
+<!-- Views for hwseta.learners model -->
+<record id="view_hwseta_learners_tree" model="ir.ui.view">
+    <field name="name">hwseta.learners.tree</field>
+    <field name="model">hwseta.learners</field>
+    <field name="arch" type="xml">
+        <tree string="Learners">
+            <field name="name"/>
+            <field name="id_number"/>
+            <field name="qualifications"/>
+        </tree>
+    </field>
+</record>
+
+<record id="view_hwseta_learners_form" model="ir.ui.view">
+    <field name="name">hwseta.learners.form</field>
+    <field name="model">hwseta.learners</field>
+    <field name="arch" type="xml">
+        <form string="Learner">
+            <field name="name"/>
+            <field name="id_number"/>
+            <field name="qualifications"/>
+        </form>
+    </field>
+</record>
+
+<!-- Views for hwseta.qualifications model -->
+<record id="view_hwseta_qualifications_tree" model="ir.ui.view">
+    <field name="name">hwseta.qualifications.tree</field>
+    <field name="model">hwseta.qualifications</field>
+    <field name="arch" type="xml">
+        <tree string="Qualifications">
+            <field name="name"/>
+            <field name="units"/>
+            <field name="total_credit"/>
+            <field name="minimum_credits"/>
+        </tree>
+    </field>
+</record>
+
+<!-- View for learner.qualifications model -->
+<record id="view_learner_qualifications_form" model="ir.ui.view">
+    <field name="name">learner.qualifications.form</field>
+    <field name="model">learner.qualifications</field>
+    <field name="arch" type="xml">
+        <form string="Learner Qualification">
+            <field name="learner"/>
+            <field name="qualification"/>
+            <field name="credits_achieved"/>
+            <field name="status"/>
+        </form>
+    </field>
+</record>
